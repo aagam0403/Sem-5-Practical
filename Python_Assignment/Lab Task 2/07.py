@@ -1,12 +1,21 @@
-keys = input("Enter keys separated by space: ").split()
-values = input("Enter values separated by space: ").split()
+def is_prime(x):
+    if x < 2:
+        return False
+    for i in range(2, int(x**0.5) + 1):
+        if x % i == 0:
+            return False
+    return True
 
-d = {}
-for i in range(len(keys)):
-    d[keys[i]] = values[i]
+even_set = {x for x in range(1, 21) if x % 2 == 0}
+prime_set = {x for x in range(1, 21) if is_prime(x)}
 
-reversed_dict = {}
-for k, v in d.items():
-    reversed_dict[v] = k
+print("Union:", even_set | prime_set)
+print("Intersection:", even_set & prime_set)
+print("Difference:", even_set - prime_set)
+print("Symmetric Difference:", even_set ^ prime_set)
 
-print("Reversed Dictionary:", reversed_dict)
+frozen = frozenset(even_set)
+try:
+    frozen.add(100)
+except AttributeError as e:
+    print("Error:", e)
