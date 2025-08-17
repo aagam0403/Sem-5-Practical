@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Arithmetic Table</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 40%;
-            margin: 20px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
-</head>
 <body>
     <?php
         $n1 = 24;
