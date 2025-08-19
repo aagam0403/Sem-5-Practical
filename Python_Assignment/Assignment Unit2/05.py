@@ -1,5 +1,5 @@
 city_temp = {}
-for _ in range(5):
+for i in range(5):
     city = input("Enter city name: ")
     temp = float(input("Enter temperature: "))
     city_temp[city] = temp
