@@ -1,8 +1,9 @@
 my_dict = {
-    "name": "Alice",
+    "name": "Aagam",
     "age": 22,
     "city": "Ahmedabad"
 }
 
 for key in my_dict:
     print(key, ":", my_dict[key])
+
