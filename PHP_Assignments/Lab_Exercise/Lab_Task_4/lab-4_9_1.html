@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<form action="lab-4_9_2.php" method="POST">
+		<table border="1">
+			<tr>
+				<td>Maths</td>
+				<td><input type="number" name="math"></td>
+			</tr>
+			<tr>
+				<td>Science</td>
+				<td><input type="number" name="sci"></td>
+			</tr>
+			<tr>
+				<td>English</td>
+				<td><input type="number" name="eng"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
