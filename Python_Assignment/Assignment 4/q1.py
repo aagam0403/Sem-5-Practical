@@ -1,4 +1,3 @@
-# q1.py
 from datetime import datetime
 
 class Doctor:
@@ -13,7 +12,6 @@ class Patient:
 
 class Appointment:
     def __init__(self):
-        # date -> list of (time, doctor, patient)
         self.schedule = {}
 
     def schedule_appointment(self, date_str, time_str, doctor, patient):
@@ -30,7 +28,6 @@ class Appointment:
         for t, doc, pat in sorted(self.schedule.get(key, []), key=lambda x: x[0]):
             print(f"{t.strftime('%H:%M')} | Dr.{doc.name} ({doc.speciality}) with {pat.name} (age {pat.age})")
 
-# Demo
 if __name__ == "__main__":
     d1 = Doctor("Amit Kumar", "Cardiology")
     d2 = Doctor("Sara Mehta", "ENT")
