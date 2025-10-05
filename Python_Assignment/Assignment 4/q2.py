@@ -1,5 +1,3 @@
-# q2.py
-
 class Trip:
     def __init__(self, destination, cost, duration_days):
         self.destination = destination
@@ -21,7 +19,6 @@ class TravelAgency:
             return None
         return max(self.trips, key=lambda t: t.cost)
 
-# Demo
 if __name__ == "__main__":
     agency = TravelAgency()
     agency.add_trip(Trip("Goa", 1500, 5))
