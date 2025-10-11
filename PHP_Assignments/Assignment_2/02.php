@@ -1,7 +1,4 @@
 <html>
-    <head>
-        <title>Age Checker</title>
-    </head>
     <body>
         <form method="get">
             Enter Age : 
@@ -24,4 +21,5 @@
             }
         ?>
     </body>
+
 </html>
